@@ -33,9 +33,7 @@ public class PhoneController {
     public @ResponseBody
     String sendSMS(String phoneNumber) {
 		
-		System.out.println("랜덤함수 시작");
         Random rand  = new Random();
-        System.out.println("랜덤함수 끝");
         String numStr = "";
         for(int i=0; i<4; i++) {
             String ran = Integer.toString(rand.nextInt(10));
@@ -50,7 +48,7 @@ public class PhoneController {
 //        SendExtensionExample.sendm(phoneNumber, numStr);
         /////////////
        
-        return numStr;
+        return "auth";
 
     }
 	

@@ -10,9 +10,8 @@
 		<!-- 전화번호 입력창 -->
 		<form action="/check/sendSMS" method="get" id="smsForm">
 			보낼사람 : <input type="text" id="fromnumber" name="from" placeholder=" 전화번호 입력 " />
-			<input type="hidden" name="number" />
-			
-			<input type="button" onclick="sendSMS('sendSMS')" value="전송하기" /><br>
+					<input type="hidden" name="number" />
+					<input type="button" onclick="sendSMS('sendSMS')" value="전송하기" /><br>
 		</form>
 
 

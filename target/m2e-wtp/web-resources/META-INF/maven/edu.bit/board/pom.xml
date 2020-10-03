@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.bit</groupId>
@@ -7,29 +8,35 @@
 	<name>spring_board_mapper_with_spring5</name>
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
-		<properties>
+	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>5.0.7.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.9.0</org.aspectj-version>
-		
+
 		<org.slf4j-version>1.7.25</org.slf4j-version>
 	</properties>
-	
+
 	<repositories>
 		<repository>
-	    	<id>oracle</id>
-	    	<url>http://www.datanucleus.org/downloads/maven2/</url>
+			<id>oracle</id>
+			<url>http://www.datanucleus.org/downloads/maven2/</url>
 		</repository>
-	</repositories>	
-	
+	</repositories>
+
 	<dependencies>
+
+
+
+
+
+
 		<!-- 오라클 JDBC 드라이버 -->
 		<dependency>
-		    <groupId>oracle</groupId>
-		    <artifactId>ojdbc6</artifactId>
-		    <version>11.2.0.3</version>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
 		</dependency>
-		
+
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -55,18 +62,18 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>${org.aspectj-version}</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
 		<dependency>
-		    <groupId>org.aspectj</groupId>
-		    <artifactId>aspectjweaver</artifactId>
-		    <version>${org.aspectj-version}</version>
-		</dependency>	
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
 
-		
-		
-		
-		
+
+
+
+
 		<!-- Logging -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -217,7 +224,7 @@
 			<version>2.8.2</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
