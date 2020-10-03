@@ -30,8 +30,8 @@ public class PhoneController {
 	
 	
 	@GetMapping("/check/sendSMS")
-    public @ResponseBody
-    String sendSMS(String phoneNumber) {
+	@ResponseBody
+    public String sendSMS(String phoneNumber) {
 		
 		System.out.println("랜덤함수 시작");
         Random rand  = new Random();
@@ -50,7 +50,7 @@ public class PhoneController {
 //        SendExtensionExample.sendm(phoneNumber, numStr);
         /////////////
        
-        return numStr;
+        return "인증번호: "+numStr;
 
     }
 	
