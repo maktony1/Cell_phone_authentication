@@ -14,7 +14,7 @@
 					<input type="button" onclick="sendSMS('sendSMS')" value="전송하기" /><br>
 		</form>
 
-
+		 
 		<script>
 		    function sendSMS(pageName){
 		 
