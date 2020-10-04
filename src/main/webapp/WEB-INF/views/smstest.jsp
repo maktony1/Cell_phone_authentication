@@ -39,7 +39,7 @@
 						             number = number - 10000;
 						          }
 						          
-									console.log("number = " + number);
+							   console.log("number = " + number);
 							
 						          $("#text").val(number);      /* 난수로 생성된 인증번호를 hidden name : text 에 숨긴다 */
 						       
@@ -81,7 +81,7 @@
 					    }) /* end of send.click */
 					    
 					    $("#enterBtn").click(function() {   /* 내가 작성한 번호와 인증번호를 비교한다 */
-					       alert($("#text").val());
+					      /*  alert($("#text").val()); */
 					       var userNum = $("#userNum").val();
 					       
 					       var sysNum = $("#text").val();         
